@@ -1,0 +1,15 @@
+[project]
+name = "sb-sim"
+version = "0.1.0"
+description = "Secure Boot Chain Simulator"
+requires-python = ">=3.9"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+sb-sim = "sbsim.cli:main"
